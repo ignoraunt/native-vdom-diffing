@@ -17,3 +17,14 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
   dom.innerHTML = vdom;
 });
+
+// get the node type
+function getNodeType(node) {
+  if (node.nodeType == 1) {
+    return node.tagName.toLowerCase();
+  } else {
+    return node.nodeType;
+  }
+}
+
+console.log(getNodeType(dom))
