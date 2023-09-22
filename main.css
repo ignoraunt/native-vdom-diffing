@@ -32,6 +32,17 @@ p {
   font-size: 2rem;
 }
 
+span {
+  display: block;
+  margin-left: 2rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+
+  animation-name: text-opacity;
+  animation-duration: 1.5s;
+  /* animation-iteration-count: infinite; */
+}
+
 button {
   display: block;
   margin-top: 5rem;
@@ -67,5 +78,14 @@ button:active {
 
   br {
     display: none;
+  }
+}
+
+@keyframes text-opacity {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }
