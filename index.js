@@ -1,4 +1,4 @@
-const vdom = `
+const template = `
 <h1>Heere folwen the wordes <br />betwene the Hoost and the Millere</h1>
 <p>Whan that the Knyght had thus his tale ytoold,</p>
 <span>When the Knight had thus told his tale,</span>
@@ -27,4 +27,14 @@ function getNodeType(node) {
   }
 }
 
-console.log(getNodeType(dom))
+// parse template as nodes
+function parse(template) {
+  let parser = new DOMParser();
+  let parsedTemplate = parser.parseFromString(template, "text/html");
+  return parsedTemplate.body;
+}
+
+const vdom = parse(template);
+
+console.log(dom);
+console.log(vdom);
