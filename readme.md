@@ -1,0 +1,1 @@
+Simple DOM diffing algorithm with keys and attributes support.
