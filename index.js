@@ -72,7 +72,7 @@ function patchAttributes(vdom, dom) {
   let vdomAttributes = getAttributeIndex(vdom);
   let domAttributes = getAttributeIndex(dom);
   if (vdomAttributes == domAttributes) return;
-  Object.keys(vdomAttributes).forEach((key, i) => {
+  Object.keys(vdomAttributes).forEach((key) => {
     // add the attribute if not present ...
     if (!dom.getAttribute(key)) {
       dom.setAttribute(key, vdomAttributes[key]);
@@ -83,7 +83,7 @@ function patchAttributes(vdom, dom) {
       }
     }
   });
-  Object.keys(domAttributes).forEach((key, i) => {
+  Object.keys(domAttributes).forEach((key) => {
     // remove the attribute if not present in the vdom
     if (!vdom.getAttribute(key)) {
       dom.removeAttribute(key);
@@ -103,6 +103,8 @@ function hasKey(dom, key) {
   return keymatched;
 }
 
+
+// update keys
 function patchKeys(vdom, dom) {
   // remove a key from the dom if unmatched
   for (let i = 0; i < dom.children.length; i++) {

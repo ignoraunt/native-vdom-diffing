@@ -62,11 +62,11 @@ button:active {
 
 @media (max-width: 719px) {
   html {
-    font-size: calc(7px + 0.33vw);
+    font-size: calc(8px + 0.33vw);
   }
 
   div {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   button:hover {
