@@ -4,14 +4,14 @@
 var template = `
 <h1 class="could-also-change-attributes-independently">Heere folwen the wordes <br />betwene the Hoost and the Millere</h1>
 <p key="1">Whan that the Knyght had thus his tale ytoold,</p>
-<span key="6">When the Knight had thus told his tale,</span>
-<p key="2">In al the route nas ther yong ne oold</p>
-<span key="7">In all the company there was no one young nor old</span>
-<p key="3">That he ne seyde it was a noble storie</p>
-<span key="8">Who did not say it was a noble story</span>
-<p key="4">And worthy for to drawen to memorie,</p>
-<span key="9">And worthy to draw into memory,</span>
-<p key="5">And namely the gentils everichon.</p>
+<span key="2">When the Knight had thus told his tale,</span>
+<p key="3">In al the route nas ther yong ne oold</p>
+<span key="4">In all the company there was no one young nor old</span>
+<p key="5">That he ne seyde it was a noble storie</p>
+<span key="6">Who did not say it was a noble story</span>
+<p key="7">And worthy for to drawen to memorie,</p>
+<span key="8">And worthy to draw into memory,</span>
+<p key="9">And namely the gentils everichon.</p>
 <span>And especially the gentlefolk every one.</span>`;
 
 // get the node to be re-rendered
